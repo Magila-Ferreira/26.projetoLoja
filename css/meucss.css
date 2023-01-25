@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/05/2021, 10:43:36
+    Author     : Mágila M.S. Ferreira
+*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #999, #ccc, #fff);
+    text-align: center;
+    overflow: scroll;
+    height: 97.7vh;
+    margin-top: 20px;
+    overflow: hidden;
+}
+table {
+    border: solid 1px;
+    margin-top: 2%;
+    width: 100%;
+    background-color: #fff;
+}
+table tr th {
+    border: solid 2px;
+    background-color: black;
+    color: white;
+}
+table tr td {
+    border: solid 1px;
+}
+td {
+    height: auto;
+    width: auto;
+}
+label {
+    border: solid 0px;
+}
+.col1 {
+    float: left;
+    left: 0px;
+    width: 85px;
+    position: relative;
+}
+
+.col2 {
+    float: left;
+    left: auto;
+    width: 200px;
+    position: relative;
+}
+
+.col3 {
+    float: left;
+    left: auto;
+    width: 70px;
+    position: relative;
+}
+
+.col4,
+.col5 {
+    float: left;
+    left: auto;
+    width: 120px;
+    position: relative;
+}
+.produto__storage,
+.compra__storage {
+    text-align: center;
+    max-width: 70px;
+    max-height: 30px;
+    padding: 10px;
+}
+.produto__storage__img {
+    max-width: 70px;
+    max-height: 70px;
+    padding: 5%;
+}
+main {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 15%;
+}
+.add__compra {
+    color: white;
+    background-color: #595;
+    font-weight: bolder;
+    width: 90px;
+    height: 30px;
+    border-radius: 30%;
+    border: #000 solid 2px;
+}
+.add,
+.sub,
+.del {
+    background-color: #3f3f3f;
+    margin: 2px;
+}
+.add {
+    color: #55ff55;
+}
+.sub {
+    color: #55ccff;
+}
+.del {
+    color: #ff55aa;
+}
+.add__compra:hover,
+.add:hover,
+.sub:hover,
+.del:hover {
+    background-color: #3f3f3f;
+    border: solid #55ff55 3px;
+}
+.fechar__Pedido, #finalizar {
+    margin: 20px 0;
+}
+#tabela__carrinho, #tabela_loja {
+    max-width: 64%;
+    margin: 0 18%;
+}

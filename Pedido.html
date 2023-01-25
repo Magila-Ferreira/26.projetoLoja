@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pedido</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/funcoes.js"></script>
+        <link rel="stylesheet" href="css/meucss.css"/>
+    </head>
+    <body>
+        <h1>Fechar Pedido</h1>
+        <div>
+            <form id="cadastro" action="index.html">
+                <fieldset>
+                    <legend>Cliente</legend>
+                    
+                    <label class="col1" for="cpf">CPF:</label>
+                    <input class="col2" type="text" name="cpf" id="cpf" value="" required>
+                    <br>
+                    <br>
+                    <label class="col1" for="nome">Nome:</label>
+                    <input class="col2" type="text" name="nome" id="nome" value="" required>
+                    <br>
+                    <br>
+                    <label class="col1" for="email">E-mail:</label>
+                    <input class="col2" type="text" name="email" id="email" value="" required>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label class="col1" for="cep">Cep:</label>
+                    <input class="col2" type="text" name="cep" id="cep" value="" required>
+                    <br><br>
+                    <label class="col1" for="logradouro">Logradouro:</label>
+                    <input class="col2" type="text" name="logradouro" id="logradouro" value="" required>
+                    <br><br>
+                    <label class="col1" for="numero">Número:</label>
+                    <input class="col2" type="text" name="numero" id="numero" value="" required>
+                    <br><br>
+                    <label class="col1" for="bairro">Bairro:</label>
+                    <input class="col2" type="text" name="bairro" id="bairro" value="" required>
+                    <br><br>
+                    <label class="col1" for="cidade">Cidade:</label>
+                    <input class="col2" type="text" name="cidade" id="cidade" value="" required>
+                    <br><br>
+                    <label class="col1" for="estado">Estado:</label>
+                    <input class="col2" type="text" name="estado" id="estado" value="" required>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Produtos</legend>
+                    <div id="lista">Vazio</div>
+                </fieldset>
+                
+                 <input id="finalizar" type="button" value="Finalizar Compra" required/>           
+            </form>
+        </div>
+        <script src="./js/pedido.js"></script>
+    </body>
+</html>
