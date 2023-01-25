@@ -55,7 +55,7 @@ function produtosIniciais() {
         descricao: "Monitor 28, lcd 4K 144HZ para Desktop",
         valor: 1601.79,
         qtde: 20,
-        url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.samsung.com%2Fbr%2Fmonitors%2Fgaming%2Fcurved-gaming-monitor-with-the-fast-and-smooth-gameplay-24-inch-lc24fg73fqlxzd%2F&psig=AOvVaw18G0a7srT13a-57gd98x1u&ust=1674769004786000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCNjr3-3W4_wCFQAAAAAdAAAAABAF"
+        url: "https://http2.mlstatic.com/D_NQ_NP_2X_764577-MLB50160301963_062022-F.webp"
     };
     listaprodutos.push(produto);
     produto = {
