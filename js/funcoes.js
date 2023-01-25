@@ -55,7 +55,7 @@ function produtosIniciais() {
         descricao: "Monitor 28, lcd 4K 144HZ para Desktop",
         valor: 1601.79,
         qtde: 20,
-        url: "https://ae01.alicdn.com/kf/S7bb354c1ccdd47bdad688778f80d8ae31/28-ips-144hz-monitor-gamer-lcd-4k-monitores-pc-para-desktop-hd-gaming-monitores-2k-tela.jpg_Q90.jpg_.webp"
+        url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.samsung.com%2Fbr%2Fmonitors%2Fgaming%2Fcurved-gaming-monitor-with-the-fast-and-smooth-gameplay-24-inch-lc24fg73fqlxzd%2F&psig=AOvVaw18G0a7srT13a-57gd98x1u&ust=1674769004786000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCNjr3-3W4_wCFQAAAAAdAAAAABAF"
     };
     listaprodutos.push(produto);
     produto = {
