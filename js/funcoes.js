@@ -55,7 +55,7 @@ function produtosIniciais() {
         descricao: "Monitor 28, lcd 4K 144HZ para Desktop",
         valor: 1601.79,
         qtde: 20,
-        url: "https://http2.mlstatic.com/D_NQ_NP_2X_764577-MLB50160301963_062022-F.webp"
+        url: "https://ae01.alicdn.com/kf/S7bb354c1ccdd47bdad688778f80d8ae31/28-ips-144hz-monitor-gamer-lcd-4k-monitores-pc-para-desktop-hd-gaming-monitores-2k-tela.jpg_Q90.jpg_.webp"
     };
     listaprodutos.push(produto);
     produto = {
