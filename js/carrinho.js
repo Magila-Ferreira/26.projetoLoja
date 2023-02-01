@@ -8,7 +8,6 @@ window.onload = function () {
     mostrarCompras(lista_ComprasOrganizadas, itensComprados);
     editarNumItens(itensComprados);
 }
-
 function quantItensComprados(lista_Compras) {
     for (const itemLista_Compras of lista_Compras) {
         switch (itemLista_Compras.id) {
@@ -31,8 +30,6 @@ function salvarCompras(numBotao) {
     // Guardar um vetor no localStorage
     gravaDados("compra", lista_Compras);
 }
-
-// Função organizarCompras
 function organizarCompras(lista_Compras) {
     let aux = [];
 
@@ -55,7 +52,6 @@ function organizarCompras(lista_Compras) {
     }
     return aux;
 }
-
 function mostrarCompras(lista_ComprasOrganizadas, itensComprados) {
     let tbCompra = document.querySelector("#tabela__carrinho");
     if (tbCompra === null) {
@@ -110,9 +106,6 @@ function mostrarCompras(lista_ComprasOrganizadas, itensComprados) {
             btAdd.classList.add("add");
             btSub.classList.add("sub");
             btDel.classList.add("del");
-            btAdd.value = 0;
-            btSub.value = 1;
-            btDel.value = 2;
             var iAdd = document.createElement("i");
             var iSub = document.createElement("i");
             var iDel = document.createElement("i");
@@ -148,23 +141,20 @@ function editarNumItens(itensComprados) {
     var botaoAdd = document.querySelectorAll(".add");
     var botaoSub = document.querySelectorAll(".sub");
     var botaoDel = document.querySelectorAll(".del");
+    var qtdItensCarrinho = document.querySelectorAll(".qtd");
+
     if (botaoAdd === null || botaoSub === null || botaoDel === null) {
         return
     }
-
-    /* ADD funcções aos botãos */
-    console.log(botaoAdd);
     for (var i = 0; i < botaoAdd.length; i++) {
         botaoAdd[i].value = i;
-        //botaoAdd[i].addEventListener("click", addItem(i));
     }
-    console.log(botaoAdd);
-    /* comprar(botaoAdd);
-    var qtdItensCarrinho = document.querySelectorAll(".qtd");
 
-    function addItem() {
-        if (botao)
-        itensCarrinho.textContent = itens;
-    } */
+    for (const item of botaoAdd) {
+        item.addEventListener("click", function () {
+            qtdItensCarrinho[item.value].textContent++;
+            salvarCompras(item.value);   
+            quantItensComprados(lista_Compras);
+        });
+    }
 }
-

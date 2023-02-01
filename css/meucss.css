@@ -38,7 +38,7 @@ td {
 label {
     border: solid 0px;
 }
-.col1 {
+.colmax-1 {
     float: left;
     left: 0px;
     width: 85px;
@@ -82,7 +82,7 @@ main {
     width: 70%;
     justify-content: center;
     align-items: center;
-    margin: 2% 15%;
+    margin: 2% auto;
 }
 .add__compra {
     color: white;
@@ -120,5 +120,6 @@ main {
 }
 #tabela__carrinho, #tabela_loja {
     max-width: 64%;
-    margin: 0 18%;
+    min-width: 700px;
+    margin: 0 auto;
 }
