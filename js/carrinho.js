@@ -9,7 +9,9 @@ window.onload = function () {
     editarNumItens(itensComprados);
 }
 function quantItensComprados(lista_Compras) {
+    console.log(lista_Compras);
     for (const itemLista_Compras of lista_Compras) {
+        console.log(itemLista_Compras.id);
         switch (itemLista_Compras.id) {
             case "CPU gamer": itensComprados[0]++;
                 break;
@@ -153,7 +155,7 @@ function editarNumItens(itensComprados) {
     for (const item of botaoAdd) {
         item.addEventListener("click", function () {
             qtdItensCarrinho[item.value].textContent++;
-            salvarCompras(item.value);   
+            salvarCompras(item.value); 
             quantItensComprados(lista_Compras);
         });
     }
