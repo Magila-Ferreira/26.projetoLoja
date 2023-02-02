@@ -95,6 +95,11 @@ function valor(numero) {
  *     1 hora é igual a 1000*60*60
  *     1 dia é igual a 1000*60*60*24
  */
+function formatarNumero(valor) {
+    valor = valor?.replace(/[^\d|,]+/g, '');
+    valor = valor?.replace(/,/, '.');
+    return valor;
+}
 function criarCookie(valor, nome, duracao) {
     const d = new Date();
     d.setTime(d.getTime() + duracao);
