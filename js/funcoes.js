@@ -47,8 +47,7 @@ function produtosIniciais() {
         descricao: "CPU i5 E5-2650, gtx 1050, ram 16gb, SSD 1tb",
         valor: 5688.19,
         qtde: 2,
-        //url: "https://http2.mlstatic.com/D_NQ_NP_2X_764577-MLB50160301963_062022-F.webp"
-        url: "https://ae01.alicdn.com/kf/S7bb354c1ccdd47bdad688778f80d8ae31/28-ips-144hz-monitor-gamer-lcd-4k-monitores-pc-para-desktop-hd-gaming-monitores-2k-tela.jpg_Q90.jpg_.webp"
+        url: "https://http2.mlstatic.com/D_NQ_NP_2X_764577-MLB50160301963_062022-F.webp"
     };
     listaprodutos.push(produto);
     produto = {
@@ -56,7 +55,7 @@ function produtosIniciais() {
         descricao: "Monitor 28, lcd 4K 144HZ para Desktop",
         valor: 1601.79,
         qtde: 20,
-        url: "https://ae01.alicdn.com/kf/S7bb354c1ccdd47bdad688778f80d8ae31/28-ips-144hz-monitor-gamer-lcd-4k-monitores-pc-para-desktop-hd-gaming-monitores-2k-tela.jpg_Q90.jpg_.webp"
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCBJ-oeaTn-upYOr1WPnaRhLKr878UShPHew&usqp=CAU"
     };
     listaprodutos.push(produto);
     produto = {
