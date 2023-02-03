@@ -47,7 +47,8 @@ function produtosIniciais() {
         descricao: "CPU i5 E5-2650, gtx 1050, ram 16gb, SSD 1tb",
         valor: 5688.19,
         qtde: 2,
-        url: "https://http2.mlstatic.com/D_NQ_NP_2X_764577-MLB50160301963_062022-F.webp"
+        //url: "https://http2.mlstatic.com/D_NQ_NP_2X_764577-MLB50160301963_062022-F.webp"
+        url: "https://ae01.alicdn.com/kf/S7bb354c1ccdd47bdad688778f80d8ae31/28-ips-144hz-monitor-gamer-lcd-4k-monitores-pc-para-desktop-hd-gaming-monitores-2k-tela.jpg_Q90.jpg_.webp"
     };
     listaprodutos.push(produto);
     produto = {
