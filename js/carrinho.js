@@ -30,6 +30,27 @@ function salvarCompras(numBotao) {
     // Guardar um vetor no localStorage
     gravaDados("compra", lista_Compras);
 }
+function diminuirCompra(numBotao) {
+    let lista_Produtos = lerDados("produto");
+
+    for (let i = 0; i < lista_Compras.length; i++) {
+        if (lista_Produtos[numBotao].id === lista_Compras[i].id) {
+            lista_Compras.splice(i, 1);
+            gravaDados("compra", lista_Compras);
+            break;
+        }
+    }
+}
+function deletarCompra(numBotao, qtdItensCarrinho) {
+    let lista_Produtos = lerDados("produto");
+    for (let i = 0; i < lista_Compras.length; i++) {
+        while (lista_Produtos[numBotao].id === lista_Compras[i].id) {
+            lista_Compras.splice(i, 1);
+            lista_Compras = lista_Compras;
+            gravaDados("compra", lista_Compras);
+        }
+    }
+}
 function organizarCompras(lista_Compras) {
     let aux = [];
 
@@ -70,6 +91,7 @@ function mostrarCompras(lista_ComprasOrganizadas, itensComprados) {
             let valorTotal = qtdCompra * valorUnit;
 
             var tr = document.createElement("tr");
+            tr.classList.add("linha");
 
             var h3 = document.createElement("h3");
             h3.textContent = itemCompra.id;
@@ -141,29 +163,62 @@ function mostrarCompras(lista_ComprasOrganizadas, itensComprados) {
     }
 }
 function editarNumItens() {
+    var produto = document.querySelectorAll(".linha");
     var idProduto = document.querySelectorAll(".idProduto");
+    var qtdItensCarrinho = document.querySelectorAll(".qtd");
+
     var botaoAdd = document.querySelectorAll(".add");
     var botaoSub = document.querySelectorAll(".sub");
     var botaoDel = document.querySelectorAll(".del");
-    var qtdItensCarrinho = document.querySelectorAll(".qtd"); 
 
     if (botaoAdd === null || botaoSub === null || botaoDel === null) {
         return
     }
     for (var i = 0; i < botaoAdd.length; i++) {
         var id = idProduto[i].textContent;
-
         switch (id) {
-            case "CPU gamer": botaoAdd[i].value = 0;
+            case "CPU gamer":
+                botaoAdd[i].value = 0;
+                botaoSub[i].value = 0;
+                botaoDel[i].value = 0;
                 break;
-            case "Monitor gamer": botaoAdd[i].value = 1;
+            case "Monitor gamer":
+                botaoAdd[i].value = 1;
+                botaoSub[i].value = 1;
+                botaoDel[i].value = 1;
                 break;
-            case "Teclado": botaoAdd[i].value = 2;
+            case "Teclado":
+                botaoAdd[i].value = 2;
+                botaoSub[i].value = 2;
+                botaoDel[i].value = 2;
                 break;
-            case "Mouse": botaoAdd[i].value = 3;
+            case "Mouse":
+                botaoAdd[i].value = 3;
+                botaoSub[i].value = 3;
+                botaoDel[i].value = 3;
                 break;
-        } adicionarItens(botaoAdd[i], qtdItensCarrinho, i);
+        }
+        adicionarItens(botaoAdd[i], qtdItensCarrinho, i);
+        subtrairItens(botaoSub[i], qtdItensCarrinho, i);
+        excluirItens(botaoDel[i], qtdItensCarrinho, i);
     }
+}
+function excluirItens(item, qtdItensCarrinho, i) {
+    let valorTotal = document.querySelectorAll(".valorTotal");
+    item.addEventListener("click", function () {
+        qtdItensCarrinho[i].textContent = 0;
+        valorTotal[i].textContent = valor(0);
+        deletarCompra(item.value, qtdItensCarrinho);
+    })
+}
+function subtrairItens(item, qtdItensCarrinho, i) {
+    item.addEventListener("click", function () {
+        if (qtdItensCarrinho[i].textContent > 0) {
+            qtdItensCarrinho[i].textContent--;
+        }
+        diminuirCompra(item.value);
+        editarValor(qtdItensCarrinho, i);
+    })
 }
 function adicionarItens(item, qtdItensCarrinho, i) {
     item.addEventListener("click", function () {
