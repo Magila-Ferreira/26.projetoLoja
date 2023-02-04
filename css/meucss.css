@@ -79,7 +79,7 @@ label {
     padding: 5%;
 }
 main {
-    width: 70%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     margin: 2% auto;
@@ -90,8 +90,11 @@ main {
     font-weight: bolder;
     width: 90px;
     height: 30px;
-    border-radius: 30%;
+    border-radius: 10%;
     border: #000 solid 2px;
+}
+#verPedidosRealizados {
+    margin-top: 5px;
 }
 .add,
 .sub,
@@ -118,8 +121,68 @@ main {
 .fechar__Pedido, #finalizar {
     margin: 20px 0;
 }
-#tabela__carrinho, #tabela_loja {
-    max-width: 64%;
-    min-width: 700px;
+#tabela__carrinho, #tabela_loja, #cadastro {
+    max-width: 40%;
+    min-width: 680px;
     margin: 0 auto;
+}
+#cadastro {
+    text-align: left;
+}
+.cadastro_input {
+    min-width: 300px;
+}
+.cadastro_label {
+    margin-left: 10%;
+}
+.cpf {
+    margin-right: 45px;
+}
+.nome {
+    margin-right: 35px;
+}
+.email {
+    margin-right: 31px;
+}
+.cep {
+    margin-right: 50px;
+}
+.logradouro {
+    margin-right: 1px;
+}
+.numero {
+    margin-right: 24px;
+}
+.bairro {
+    margin-right: 36px;
+}
+.cidade {
+    margin-right: 32px;
+}
+.estado {
+    margin-right: 34px;
+}
+#finalizar {
+    margin-bottom: 0;
+    margin-left: 80%;
+    color: white;
+    background-color: #595;
+    font-weight: bolder;
+    width: 130px;
+    height: 30px;
+    border-radius: 10%;
+    border: #000 solid 1px;
+}
+.fechar__Pedido {
+    color: white;
+    background-color: #595;
+    font-weight: bolder;
+    width: 110px;
+    height: 25px;
+    border-radius: 10%;
+    border: #000 solid 1px;
+}
+#finalizar:hover, .fechar__Pedido:hover {
+    background-color: #3f3f3f;
+    border: solid #55ff55 3px;
 }

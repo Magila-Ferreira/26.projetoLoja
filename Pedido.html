@@ -13,51 +13,51 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/meucss.css"/>
     </head>
     <body>
+        <a href="carrinho.html"> Voltar ao carrinho </a>
         <h1>Fechar Pedido</h1>
         <div>
             <form id="cadastro" action="index.html">
                 <fieldset>
                     <legend>Cliente</legend>
                     
-                    <label class="col1" for="cpf">CPF:</label>
-                    <input class="col2" type="text" name="cpf" id="cpf" value="" required>
+                    <label class="cadastro_label cpf" for="cpf">CPF:</label>
+                    <input class="cadastro_input" type="text" name="cpf" id="cpf" value="" required>
                     <br>
                     <br>
-                    <label class="col1" for="nome">Nome:</label>
-                    <input class="col2" type="text" name="nome" id="nome" value="" required>
+                    <label class="cadastro_label nome" for="nome">Nome:</label>
+                    <input class="cadastro_input" type="text" name="nome" id="nome" value="" required>
                     <br>
                     <br>
-                    <label class="col1" for="email">E-mail:</label>
-                    <input class="col2" type="text" name="email" id="email" value="" required>
+                    <label class="cadastro_label email" for="email">E-mail:</label>
+                    <input class="cadastro_input" type="text" name="email" id="email" value="" required>
                     <br>
                 </fieldset>
                 <fieldset>
                     <legend>Endereço</legend>
-                    <label class="col1" for="cep">Cep:</label>
-                    <input class="col2" type="text" name="cep" id="cep" value="" required>
+                    <label class="cadastro_label cep" for="cep">Cep:</label>
+                    <input class="cadastro_input" type="text" name="cep" id="cep" value="" required>
                     <br><br>
-                    <label class="col1" for="logradouro">Logradouro:</label>
-                    <input class="col2" type="text" name="logradouro" id="logradouro" value="" required>
+                    <label class="cadastro_label logradouro" for="logradouro">Logradouro:</label>
+                    <input class="cadastro_input" type="text" name="logradouro" id="logradouro" value="" required>
                     <br><br>
-                    <label class="col1" for="numero">Número:</label>
-                    <input class="col2" type="text" name="numero" id="numero" value="" required>
+                    <label class="cadastro_label numero" for="numero">Número:</label>
+                    <input class="cadastro_input" type="text" name="numero" id="numero" value="" required>
                     <br><br>
-                    <label class="col1" for="bairro">Bairro:</label>
-                    <input class="col2" type="text" name="bairro" id="bairro" value="" required>
+                    <label class="cadastro_label bairro" for="bairro">Bairro:</label>
+                    <input class="cadastro_input" type="text" name="bairro" id="bairro" value="" required>
                     <br><br>
-                    <label class="col1" for="cidade">Cidade:</label>
-                    <input class="col2" type="text" name="cidade" id="cidade" value="" required>
+                    <label class="cadastro_label cidade" for="cidade">Cidade:</label>
+                    <input class="cadastro_input" type="text" name="cidade" id="cidade" value="" required>
                     <br><br>
-                    <label class="col1" for="estado">Estado:</label>
-                    <input class="col2" type="text" name="estado" id="estado" value="" required>
+                    <label class="cadastro_label estado" for="estado">Estado:</label>
+                    <input class="cadastro_input" type="text" name="estado" id="estado" value="" required>
                     <br>
                 </fieldset>
                 <fieldset>
                     <legend>Produtos</legend>
                     <div id="lista">Vazio</div>
+                    <input id="finalizar" type="button" value="Finalizar Compra" required />
                 </fieldset>
-                
-                 <input id="finalizar" type="button" value="Finalizar Compra" required/>           
             </form>
         </div>
         <script src="./js/pedido.js"></script>
