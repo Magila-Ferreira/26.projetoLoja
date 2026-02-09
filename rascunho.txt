@@ -1,0 +1,17 @@
+// Função criar cliente fixo
+cliente();
+
+// Função verificaCPF
+// Função verifica se os dados das inputs correspondem aos dados do local storage
+verificaCPF();
+
+// Função importa os dados que o cliente digitou e cria um array com eles  
+cadastrarCliente();
+
+// Função salva os dados no local storage se forem diferentes
+salvarCliente();
+
+// Função completa os dados do cliente se o cpf for igual
+completaDadosCliente();
+
+// CRIAR MÁSCARAS PARA CPF 
