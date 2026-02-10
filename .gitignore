@@ -1,0 +1,42 @@
+# Node
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs / editors
+.vscode/
+.idea/
+nbproject/private/
+
+# Build / cache
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# npm lock
+package-lock.json
+
+# Imagens
+imagens/
+
+# Coverage
+coverage/
+
+# Misc
+.sass-cache/
+*.tgz
