@@ -126,6 +126,17 @@ main {
     min-width: 680px;
     margin: 0 auto;
 }
+.link__estilizado {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+
+
 #cadastro {
     text-align: left;
 }
